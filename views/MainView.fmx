@@ -1,0 +1,1132 @@
+object main_view: Tmain_view
+  Left = 0
+  Top = 0
+  Caption = 'MainView'
+  ClientHeight = 1024
+  ClientWidth = 1440
+  Fill.Color = xFFF5F8FF
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  Constraints.MinHeight = 1024.000000000000000000
+  Constraints.MinWidth = 1440.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object nav: TRectangle
+    Align = Top
+    Fill.Color = xFFF8F8F8
+    Size.Width = 1440.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object LabelTitle1: TLabel
+      AutoSize = True
+      StyledSettings = []
+      Position.X = 70.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Inter'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      TextSettings.FontColor = xFFFF6767
+      Text = 'Dash'
+      TabOrder = 1
+    end
+    object LabelTitle2: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.X = 117.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Inter'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      Text = 'board'
+      TabOrder = 0
+    end
+    object SearchBox: TRectangle
+      Align = Center
+      Fill.Color = xFFF5F8FF
+      Size.Width = 600.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object BtnSearch: TRectangle
+        Align = Right
+        Fill.Color = xFFFF6767
+        Position.X = 564.000000000000000000
+        Size.Width = 36.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = BtnSearchClick
+        object BtnSreachIcon: TImage
+          MultiResBitmap.Height = 16
+          MultiResBitmap.Width = 17
+          MultiResBitmap.LoadSize = 2
+          MultiResBitmap = <
+            item
+              Width = 17
+              Height = 16
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000011000000100806000000F03194
+                5F0000000473424954080808087C086488000000E449444154388D8D935111C2
+                3010443728A8032AA10EA8041C800370501C800370800424000A8A83D6C1E3E7
+                0A377081DC4C3E9AECBD6C926D52504025A9B1CF31A5748B7461012D70E1BB7A
+                605502E8AC61000EC0DAA01B83009CCD6508589BE89A13013BD31C7390DE46BC
+                CB5B7730509B73F1F7CC4015BA71F49F2E9CFE0AF47E6E26A992A494D2580291
+                749F7A3C649CAC1642E6921E9F9029488B7FDD402DA9753DAF85CAB251F23AA7
+                F0756CD1E7A4CE00F62E8CA1C687A9078EC0D2E09D4BECC5699A1CA821FE7706
+                60EB3413349F2DBBA7D6C69775A076A0F8682565A0A5243D01A1786034DF87FA
+                510000000049454E44AE426082}
+              FileName = 'C:\Users\mohammad\Downloads\Search.png'
+            end>
+          Align = Center
+          Size.Width = 15.000000000000000000
+          Size.Height = 15.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.200000002980232200
+        Opacity = 0.100000001490116100
+        ShadowColor = claBlack
+      end
+      object EditSearch: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Left
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Position.X = 15.000000000000000000
+        Margins.Left = 15.000000000000000000
+        Size.Width = 538.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Rectangle2: TRectangle
+      Anchors = [akTop, akRight]
+      Fill.Color = xFFFF6767
+      Position.X = 1127.000000000000000000
+      Position.Y = 22.000000000000000000
+      Size.Width = 36.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object Image1: TImage
+        MultiResBitmap.Height = 16
+        MultiResBitmap.Width = 17
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 15
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000000F000000100806000000C95625
+              040000000473424954080808087C086488000000BD4944415428919593C11182
+              301045FF3ADEC50ED281969012EC00EDC00E6C850E28013A502B402BD00E9E07
+              03830124FC4B92BFFB363BD989694240262993F436B3F7545E0C79A0029AB0B6
+              FB7C0ECC43A28F7C0794C0650A7401747F8A97C0792C50CCB50664403316189A
+              E305AAB6BB550A10E9296900A78DE3AB4D07873652E187A46DFF6627E9BE00DE
+              F7612FE99A08D79276DD696EBEB1801790AD7B900752F99BA483854A4785E75F
+              A06261FEAF2C36C2571C7BBC9399D57DE3038AE7869DCF38BBD1000000004945
+              4E44AE426082}
+            FileName = 'C:\Users\mohammad\Downloads\Vector.png'
+          end>
+        Align = Center
+        Size.Width = 15.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object LayoutDate: TLayout
+      Anchors = [akTop, akRight]
+      Position.X = 1251.000000000000000000
+      Position.Y = 22.000000000000000000
+      Size.Width = 144.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object LabelDate: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Size.Width = 144.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        Text = 'LabelDate'
+        TabOrder = 0
+      end
+      object LabelDay: TLabel
+        Align = Top
+        StyledSettings = []
+        Margins.Top = 3.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = xFF3ABEFF
+        Text = '20/02/2022'
+        TabOrder = 1
+      end
+    end
+    object Rectangle3: TRectangle
+      Anchors = [akTop, akRight]
+      Fill.Color = xFFFF6767
+      Position.X = 1171.000000000000000000
+      Position.Y = 22.000000000000000000
+      Size.Width = 36.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object Image2: TImage
+        MultiResBitmap.Height = 16
+        MultiResBitmap.Width = 17
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 15
+            Height = 15
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000000F0000000F08060000003BD695
+              4A0000000473424954080808087C0864880000012B4944415428919551C151C3
+              3010DCD31847C94BA920A6837440A820E900530194900E081538254005B8034A
+              800EE4DF498ACCF188C3C8193B43EEB5BBBA95F64EC0408988B9C4478B990BEF
+              63D5D7423DD44BCC8715915467B201A4497801C8F71F236AF23CBB0773289943
+              793AB0568C73E129BDCAB9B0EB27F17B6629B2F328F33935005E534DEBFC7928
+              B64A8988987439CC52A4F87C713DB3F7F1C3FBF6B38BB6258A5F2184A5B5628E
+              B87D49FB7BB145F04EF4D32D4AD544B468DBAC010022DA13A11E354FA737DB04
+              D740AFF9F1E2CCCE851DB3DF76236CBC8F9588186BC5781FAB10E2C3A819C09A
+              48AD01A06D632122A57371791C494A11AC46636B9DDF9EF06CA67700D2FFA58B
+              B1AFAD0C00945277CCE1DF26225A880064AD18AD0F9B6B5E544A359349F6F60B
+              8D299E5C6FB39D9B0000000049454E44AE426082}
+            FileName = 'C:\Users\mohammad\Downloads\Vector (1).png'
+          end>
+        Align = Center
+        Size.Width = 15.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object SideNav: TRectangle
+    Align = Left
+    Corners = [TopRight, BottomRight]
+    Fill.Color = xFFFF6767
+    Position.Y = 80.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 944.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object SideBarBtnDashboard: TRectangle
+      Align = Top
+      Fill.Color = claNull
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 132.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      OnClick = SideBarBtnDashboardClick
+      object SideBarBtnDashboardIcon: TImage
+        MultiResBitmap.Height = 24
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 24
+            Height = 24
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+              F80000000473424954080808087C08648800000063494441544889ED95C10D80
+              300C036DC4208CC22694C9E8686C623E0CE0460D7C72EF5897448A02F95C7891
+              D4DDD082644A50829F04241B4DD227582321493B802D4D00A001389CC24F5674
+              9AB5774840B247822EF97710F9074382D91D97A004F379004844891FFA357838
+              0000000049454E44AE426082}
+            FileName = 'D:\RAD-projects\TodoList\images\category icon (1).png'
+          end>
+        Align = Left
+        Margins.Left = 16.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 16.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 24.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object SideBarBtnDashboardLabel: TLabel
+        Align = Left
+        StyledSettings = []
+        Position.X = 56.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.WordWrap = False
+        Text = 'Dashboard'
+        TabOrder = 1
+      end
+    end
+    object SideBarBtnVitalTask: TRectangle
+      Align = Top
+      Fill.Color = claNull
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 197.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      OnClick = SideBarBtnVitalTaskClick
+      object SideBarBtnVitalTaskIcon: TImage
+        MultiResBitmap.Height = 24
+        MultiResBitmap.Width = 24
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 8
+            Height = 20
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000008000000140806000000B01B7C
+              6B0000000473424954080808087C086488000000AA49444154289195915111C2
+              3010445F62804AA80424E000242001093800071D1C8082E20050501C000A1E1F
+              042674D232ECD7DDED66EF7602803A555B5FB8A98D5A93C83A0DFBE8D48AEC65
+              09EBA0CA300E7184049844E03A2278FC129C237019119C501723292AD46A806C
+              016208E10E1C0BF6078098373DEC3F555AD365F6CD9B0B99A806E6A9DDA5D57F
+              40DDA45FEDD4559F5C1662CEF214B382699D0B8E05C1F74CDDA61B6EF90D4F09
+              88E6B34542BB220000000049454E44AE426082}
+            FileName = 'C:\Users\mohammad\Downloads\Vector (3).png'
+          end>
+        Align = Left
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 17.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 17.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 17.000000000000000000
+        Size.Width = 25.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object SideBarBtnVitalTaskLabel: TLabel
+        Align = Left
+        StyledSettings = []
+        Position.X = 55.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'Vital Task'
+        TabOrder = 1
+      end
+    end
+    object LabelEmail: TLabel
+      Align = Top
+      StyledSettings = []
+      Margins.Top = 8.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Inter'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'm.baniasadi.d@gmail.com'
+      TabOrder = 3
+    end
+    object LabelUsername: TLabel
+      Align = Top
+      StyledSettings = []
+      Margins.Top = 70.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Inter'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'User name'
+      TabOrder = 2
+    end
+    object SideBarBtnMyTask: TRectangle
+      Align = Top
+      Fill.Color = claNull
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 262.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      OnClick = SideBarBtnMyTaskClick
+      object SideBarBtnMyTaskIcon: TImage
+        MultiResBitmap.Width = 24
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 24
+            Height = 24
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+              F80000000473424954080808087C086488000000C3494441544889DD94D10D83
+              300C44CF5507A01B643366E804A8137604BA41D9E0F5A7952C2B21810809F5FE
+              ACD8F7CE1141FA6B013375CD5B0C47E0DD605A8401A3F7B4985852EA5C7C31B3
+              5B0980249999F9BAA6D8FFAB25E9D299B6AAEBDAA14FB257876FB01B000C8701
+              8024E9094C5B07C97D393E2D90DC039CC359767E15004C5FA394314F2D018B0D
+              C0100C8BE63D1BF8D445F3DD8000299A77011CA468DE0D68516EFEBC2FB955F1
+              67B7481A7AAE49D2CB1771837B6CD8A845D2A363FE84FA005C777AA5B9836925
+              0000000049454E44AE426082}
+            FileName = 'C:\Users\mohammad\Downloads\my task.png'
+          end>
+        Align = Left
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 16.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 25.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object SideBarBtnMyTaskLabel: TLabel
+        Align = Left
+        StyledSettings = []
+        Position.X = 55.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'My Task'
+        TabOrder = 1
+      end
+    end
+    object SideBarBtnTaskCategories: TRectangle
+      Align = Top
+      Fill.Color = claNull
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 327.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      OnClick = SideBarBtnTaskCategoriesClick
+      object SideBarBtnTaskCategoriesIcon: TImage
+        MultiResBitmap.Width = 24
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 24
+            Height = 24
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+              F80000000473424954080808087C086488000000F0494441544889BD95616DC3
+              301484BF570D4021184220A40C02A145300D415204098432D818A44C5A061B83
+              EB8F3CAB95A5299263F77EDAD1DDC92FEF0E498DA45952A006244D5AF02BA92B
+              CD6F2E3200BD9F0D66764E4C04A0DDA424E95B4FB4C9DD5199F8708211E8803F
+              E0CBCCAE89FE1538E43ABFB8D84D529345B22210FC794271F2B7211D6A69F2D1
+              67D0AF7F9D27D0F880E5B3D897E48F8B16801908C01D3898D9FDC544078C3902
+              BB8D06D751FB895EC36E2A4A9C88B4D5C8ABA37A54789BC5B02B2E12F760023E
+              59E2FA64663F89893DB02D696B174ECF523800E77F0AE794EB3C865D95D28F9B
+              3CD7FA8B1E76EA5F8F275F0B5F0000000049454E44AE426082}
+            FileName = 'C:\Users\mohammad\Downloads\Vector (4).png'
+          end>
+        Align = Left
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 16.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 25.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object SideBarBtnTaskCategoriesLabel: TLabel
+        Align = Left
+        StyledSettings = []
+        Position.X = 55.000000000000000000
+        Size.Width = 130.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'Task Categories'
+        TabOrder = 1
+      end
+    end
+    object SideBarBtnLogout: TRectangle
+      Align = Bottom
+      Fill.Color = claNull
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 869.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      OnClick = SideBarBtnLogoutClick
+      object SideBarBtnLogoutIcon: TImage
+        MultiResBitmap.Width = 24
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 24
+            Height = 24
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+              F80000000473424954080808087C086488000000D9494441544889D596C16DC3
+              301004770317A274A0525C425C81DD81E84AE20E5C42D241DC81D581D3C1E411
+              3D0841818E32F9C8BE282CB87387A3400AE8800F8252A9806B347C0B6027693F
+              AD47499FC515AE292BEEBD7AB8A49716A1FF130074CD00402FE90B1896CCA787
+              0CDCB39C616ED600F4C06309B20B6C7E0B722E924ED33A01B27D5E0548DADA59
+              029A1F53473A3804C37A49C7ECFB6C3BB51A72CACDDAC734CDCD9A1DA4B91799
+              C1AA6CDF8057DBDF73AFDA295A0AAF0AF84BCD01CEEED951812BD376F4BFF815
+              052F8AAC98224047C1CBA234FF07DF34774CADDBBD650000000049454E44AE42
+              6082}
+            FileName = 'C:\Users\mohammad\Downloads\Vector (5).png'
+          end>
+        Align = Left
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 16.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 25.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object SideBarBtnLogoutLabel: TLabel
+        Align = Left
+        StyledSettings = []
+        Position.X = 55.000000000000000000
+        Size.Width = 98.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'Logout'
+        TabOrder = 1
+      end
+    end
+  end
+  object RecDashboard: TRectangle
+    Align = Client
+    Fill.Color = xFFF5F8FF
+    Margins.Left = 70.000000000000000000
+    Margins.Top = 100.000000000000000000
+    Margins.Right = 79.000000000000000000
+    Margins.Bottom = 100.000000000000000000
+    Size.Width = 991.000000000000000000
+    Size.Height = 744.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xC8A1A3AB
+    Visible = False
+    object ShadowEffect2: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.100000001490116100
+      ShadowColor = claBlack
+    end
+    object RecHeadTasks: TRectangle
+      Align = Client
+      Fill.Color = xFFF5F8FF
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Size.Width = 481.000000000000000000
+      Size.Height = 704.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object ShadowEffect3: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.100000001490116100
+        ShadowColor = claBlack
+      end
+      object HeadTaskDate: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        Position.X = 20.000000000000000000
+        Position.Y = 60.000000000000000000
+        Size.Width = 61.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 14.000000000000000000
+        Text = '20 June'
+        TabOrder = 1
+      end
+      object Layout1: TLayout
+        Position.X = 20.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 93.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Image3: TImage
+          MultiResBitmap.Height = 33
+          MultiResBitmap.Width = 29
+          MultiResBitmap.LoadSize = 2
+          MultiResBitmap = <
+            item
+              Width = 29
+              Height = 33
+              PNG = {
+                89504E470D0A1A0A0000000D494844520000001D000000210806000000252BA0
+                D90000000473424954080808087C086488000002B1494441544889ED97514EDB
+                401040DFAC0DBFCD0D706E104ED07202820A544890784FD0F6048413144EB00E
+                2E6A4B90C20D929E007A02DC13341F952A81BDD38F9008482044A6529118C992
+                3DBB3B6FBC3B3B3B2BDC91F65167174FEBAE7E2C2299BF0A56AC5DCBEEED3343
+                C209CD1078AE2AE793402AA25AC75CC6F0806333449C3BAE4960DE8F15A2B1F7
+                7ECF36DF4D1875EE4B64C2F002E15CFDD02931F49BDBEBED79A0A159305D54A3
+                B95C556A225ABB7E8FDB9F4F98071CA21AA94A1237D62D403BED6810044B2EED
+                BC99840D9D1BCDC4E8CF7D5154E7F179724D01558D0DC4130D22F3D87E3CD4AB
+                DA99A3FC94202B03B58DCDA48CC1C788F9D78017E8F3832AF411C9E61933759F
+                3E56ACDDCA809579C73DCFE97D81FE77D052D17B57DCE1711C8834558647A0A8
+                642A92F8ABE0FBCDF246DA6947053D2D9083A996721D58BBF9E0A9E25C37320B
+                7917A5863250913E6845542344224432AF6AEDCE461FC028F415A91BE84D7B82
+                503ECD06163D949A873D5FFCAE6A1E58CD43DB6C6C56BDAAC57B0CF4DCD1710D
+                208C7736565C7A52477D65AA55D1C1435013E62D94C8ABB1B6F1360170EDE37D
+                139855A06A1B9B89735FFA2608CF8C9A2E502D550A38D78D4C985FA848126FAF
+                8F0F7FD7FE96982078DDDC5E1F97312EFDD632985D0F2BE5A2372C6A00227A3A
+                B36FBEB80F60D07A39E8F592F84BFD39D9A6519A7676479FD6AE0D10C954CDAB
+                27D9A76651966E29BC6F01E71E5AEEF0EB879B8E40D9E450147D0072BF7C536D
+                ED56D6DCD958F6C81AC59F04C0A527751816E7A56BCA24EDF4046A3E0F97EFBB
+                DF38D7AD9885E20CEFF14551329000CDF5230A66A1E839D78DA603F31EAA9137
+                7260ED56F624D5B34B4FEA46D52154043D2DBCFE3026F8A5C3EB471DA8E0D96B
+                36375A004F53B233BE5CB5505611C6896698F1D81BA5C02785DE766034CD8381
+                B57622A3FD059BC338A247EB69850000000049454E44AE426082}
+              FileName = 'C:\Users\mohammad\Downloads\Group 127.png'
+            end>
+          Align = Left
+          Size.Width = 28.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Z: TLabel
+          Align = Left
+          StyledSettings = []
+          Margins.Left = 4.000000000000000000
+          Position.X = 32.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Inter'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+          TextSettings.FontColor = xFFFF6767
+          Text = 'To-Do'
+          TabOrder = 1
+        end
+      end
+      object LayHeadTaskAddTask: TLayout
+        Anchors = [akTop, akRight]
+        Position.X = 372.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 83.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Image4: TImage
+          MultiResBitmap.LoadSize = 2
+          MultiResBitmap = <
+            item
+              Width = 15
+              Height = 15
+              PNG = {
+                89504E470D0A1A0A0000000D494844520000000F0000000F08060000003BD695
+                4A0000000473424954080808087C086488000000B2494441542891CD90B10DC2
+                301045BFCF16550AD3C71123900D3C401C650436800D180946C8086183947496
+                DC26B6A91214A1108908C1AFEE9FEEE9DF1DF077724655AECCACD552CECDD01B
+                5E02904892FD27F0A256C162286C956A78B61B7C04340340A0CA1A35F6C1BB7A
+                7BBDB7139807BA80E1E5398C70E460A38F61D300C827B027CAD1F76302116906
+                9C09387521DC9EBB8A66F11E67D4C19559B445AAE7667EF7ED59D873DE20C61A
+                42B46B02BEA3075C53295E1B9911B20000000049454E44AE426082}
+              FileName = 'C:\Users\mohammad\Downloads\taSK.png'
+            end>
+          Position.Y = 8.000000000000000000
+          Size.Width = 15.000000000000000000
+          Size.Height = 15.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label4: TLabel
+          AutoSize = True
+          StyledSettings = [Style]
+          Position.X = 23.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 66.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Inter'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFFA1A3AB
+          Text = 'Add task'
+          TabOrder = 1
+        end
+        object HeadTaskAddTaskBtn: TRectangle
+          Align = Client
+          Fill.Color = claNull
+          Size.Width = 83.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = HeadTaskAddTaskBtnClick
+        end
+      end
+      object Label3: TLabel
+        AutoSize = True
+        StyledSettings = [Style]
+        Position.X = 89.000000000000000000
+        Position.Y = 60.000000000000000000
+        Size.Width = 53.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Inter'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = xFFA1A3AB
+        Text = 'Today'
+        TabOrder = 0
+      end
+      object LayoutHeadTasks: TLayout
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 100.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 100.000000000000000000
+        Size.Width = 441.000000000000000000
+        Size.Height = 541.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+      end
+    end
+    object Layout2: TLayout
+      Align = MostRight
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 521.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 450.000000000000000000
+      Size.Height = 704.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object RecCompletedTask: TRectangle
+        Align = Vertical
+        Fill.Color = xFFF5F8FF
+        Margins.Top = 20.000000000000000000
+        Position.Y = 270.000000000000000000
+        Size.Width = 450.000000000000000000
+        Size.Height = 434.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        object ShadowEffect4: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.100000001490116100
+          ShadowColor = claBlack
+        end
+        object Layout3: TLayout
+          Position.X = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 181.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Image6: TImage
+            MultiResBitmap.Height = 33
+            MultiResBitmap.Width = 29
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 21
+                Height = 24
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000150000001808060000001589B6
+                  480000000473424954080808087C0864880000019249444154388DCD93416EDA
+                  401486BF3738CB481CC137283941C90D881A227501664E5072822627687282C1
+                  A59BA6913842E909E0083E0252961ECFEBC23109044308AD947FE379F3E6FFE6
+                  B7464F58937393D8447E0634D77B2F249285FCE1C45ABB58D92E21F950900F00
+                  2A12A31AEF042E09CC455954971479E33A92A8F806D2D1EA906AAD7FA394D673
+                  6F23F2712468A7BC906950C98C68ACD07E7DD0559F42DB54CD42351DF4CF6DA1
+                  9AEE137493CF6C33BC55D1FA86ED5F8C80D121D0FF92F4FD40D3F1FD97F1F8D7
+                  D77F0675EEAE057A13E02AFD719FEC0D75CE3557EB496C8ECC04006511F2FCCF
+                  5ED012703C73E39F9DA7BAF85D8D70C05C5AFB39DB0B6A8EFC04D5D8605C092C
+                  6B4AE2B5ED7F1AD57AEB1A41B97C5C364DE46728ADB2D4DB24E95ED5F9B6426D
+                  AF3B7D0E7EFCCE93DEC5701B702B14C0F6BB3701B92D036A16BC3FDB05DC0905
+                  B0BDF3219086A238AD7B9875BD98FD4D4A7ADDC16BCE557A3F63BA4BCBDF6F18
+                  F3D17DBF7B33C888B4975085A9405B5507466470504400746ED47B8B6A76380C
+                  10E6C117677F016EC0AC0923A0C4E30000000049454E44AE426082}
+                FileName = 'C:\Users\mohammad\Downloads\Book.png'
+              end>
+            Align = Left
+            Size.Width = 21.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label6: TLabel
+            Align = Left
+            StyledSettings = []
+            Margins.Left = 7.000000000000000000
+            Position.X = 28.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Inter'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00050000000000000004000000}
+            TextSettings.FontColor = xFFFF6767
+            Text = 'Completed Task'
+            TabOrder = 1
+          end
+        end
+        object LayCompletedTask: TLayout
+          Align = Top
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 70.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 70.000000000000000000
+          Size.Width = 410.000000000000000000
+          Size.Height = 331.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+        end
+      end
+      object RecTasksStatus: TRectangle
+        Align = Top
+        Fill.Color = claWhite
+        Size.Width = 450.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        object ShadowEffect5: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.100000001490116100
+          ShadowColor = claBlack
+        end
+        object LayCompletedPBar: TLayout
+          Position.X = 32.000000000000000000
+          Position.Y = 79.000000000000000000
+          Size.Width = 110.000000000000000000
+          Size.Height = 137.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Circle7: TCircle
+            Align = Top
+            Size.Width = 110.000000000000000000
+            Size.Height = 110.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object LayCompletedPBarPie: TPie
+              Align = Center
+              Fill.Color = xFF05A301
+              Size.Width = 110.000000000000000000
+              Size.Height = 110.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              EndAngle = -120.000000000000000000
+            end
+            object Circle8: TCircle
+              Align = Center
+              Fill.Color = claWhite
+              Size.Width = 80.000000000000000000
+              Size.Height = 105.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object LayCompletedPBarText: TLabel
+                Align = Center
+                StyledSettings = [FontColor]
+                TextSettings.Font.Family = 'Inter'
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+                TextSettings.HorzAlign = Center
+                Text = '20%'
+                TabOrder = 0
+              end
+            end
+          end
+          object Label12: TLabel
+            Align = Top
+            StyledSettings = [FontColor]
+            Margins.Top = 10.000000000000000000
+            Position.Y = 120.000000000000000000
+            Size.Width = 110.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Inter'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00050000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Completed'
+            TabOrder = 1
+          end
+        end
+        object LayNotStartedPBar: TLayout
+          Position.X = 307.000000000000000000
+          Position.Y = 79.000000000000000000
+          Size.Width = 110.000000000000000000
+          Size.Height = 137.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Circle9: TCircle
+            Align = Top
+            Size.Width = 110.000000000000000000
+            Size.Height = 110.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object LayNotStartedPBarPie: TPie
+              Align = Center
+              Fill.Color = xFFF21E1E
+              Size.Width = 110.000000000000000000
+              Size.Height = 110.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              EndAngle = -90.000000000000000000
+            end
+            object Circle10: TCircle
+              Align = Center
+              Fill.Color = claWhite
+              Size.Width = 80.000000000000000000
+              Size.Height = 105.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object LayNotStartedPBarText: TLabel
+                Align = Center
+                StyledSettings = [FontColor]
+                TextSettings.Font.Family = 'Inter'
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+                TextSettings.HorzAlign = Center
+                Text = '13%'
+                TabOrder = 0
+              end
+            end
+          end
+          object Label14: TLabel
+            Align = Top
+            StyledSettings = [FontColor]
+            Margins.Top = 10.000000000000000000
+            Position.Y = 120.000000000000000000
+            Size.Width = 110.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Inter'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00050000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Not Started'
+            TabOrder = 1
+          end
+        end
+        object LayInProgressPBar: TLayout
+          Position.X = 168.000000000000000000
+          Position.Y = 77.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 139.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Circle11: TCircle
+            Align = Top
+            Size.Width = 113.000000000000000000
+            Size.Height = 110.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object LayInProgressPBarPie: TPie
+              Align = Center
+              Fill.Color = xFF0225FF
+              Size.Width = 110.000000000000000000
+              Size.Height = 110.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              EndAngle = -90.000000000000000000
+            end
+            object Circle12: TCircle
+              Align = Center
+              Fill.Color = claWhite
+              Size.Width = 80.000000000000000000
+              Size.Height = 105.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object LayInProgressPBarText: TLabel
+                Align = Center
+                StyledSettings = [FontColor]
+                TextSettings.Font.Family = 'Inter'
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+                TextSettings.HorzAlign = Center
+                Text = '46%'
+                TabOrder = 0
+              end
+            end
+          end
+          object Label16: TLabel
+            Align = Top
+            StyledSettings = [FontColor]
+            Margins.Top = 10.000000000000000000
+            Position.Y = 120.000000000000000000
+            Size.Width = 113.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Inter'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00050000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'In Progress'
+            TabOrder = 1
+          end
+        end
+        object Layout9: TLayout
+          Position.X = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 122.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Image5: TImage
+            MultiResBitmap.Height = 33
+            MultiResBitmap.Width = 29
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 28
+                Height = 28
+                PNG = {
+                  89504E470D0A1A0A0000000D494844520000001C0000001C0806000000720DDF
+                  940000000473424954080808087C086488000001E9494441544889ED964D6EDA
+                  401480BF19CCAA5DB82728B90147684E50AA084595F8C99CA0C909ECDE2039C1
+                  60A0AA8223D11B84DE801B841B14A95D5402E675418D2878DCB89476934FF2C2
+                  EF3DFBD37B238F47914332B87B071203615E3E4329D55B2DBE5E1963E64575DB
+                  E8DD80B5E310E4FA77320011B9A0F2ACF1581940B01FFA1E42808249A7DD3CF5
+                  3D6893DB586B1D21522B257CECF87C68ADA3649046D9BD525C775ACD2B6F3D8A
+                  4B2044C96C739541986F9E13E6225C5A3BAAFBCA03446A2835EBB69A2700D67E
+                  ACE920781024B4765CF377B608019CB81BD33A8F016C72DBD34A770994775A39
+                  6B98A1EA3A583E14E4FDA902F28525C6AA75E5CB414263DECE8093322F29C3DE
+                  77786C9E844FC2FF2E9C094CD0E2FD5D15EC34E531DDF51657C43F19A9B5E330
+                  49D218FE72873E99AE2EEF11EAFDE1DDCBA376B82D035839F5F968C25D99136D
+                  4CE7AC7714E1AE0CC77BD339EBC1816B987C482384865B7C3BDD3EB955829595
+                  2D59B7DB8CB3DC1F7768EDB88E2346A8EBEAF37B6B6D08D01F8EAC208D3CD941
+                  4263DE4C9DB03E2CFD94F687232BA22E7C3200950C5201E6CEB99B4283666ADA
+                  E79F76C37690C61AA25F821E1940203051F04A6B1DE5156488A81EB02734ED66
+                  6C07291B69816C2D5C2E8D0AAAAF9D5BBD2812A299FA521BA9832219C00F0F59
+                  D304D33756ED0000000049454E44AE426082}
+                FileName = 'C:\Users\mohammad\Downloads\Group 128.png'
+              end>
+            Align = Left
+            Size.Width = 28.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label17: TLabel
+            Align = Left
+            StyledSettings = []
+            Margins.Left = 4.000000000000000000
+            Position.X = 32.000000000000000000
+            Size.Width = 91.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Inter'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00050000000000000004000000}
+            TextSettings.FontColor = xFFFF6767
+            Text = 'Task Status'
+            TabOrder = 1
+          end
+        end
+      end
+    end
+  end
+  object Labelwellcome: TLabel
+    AutoSize = True
+    StyledSettings = [FontColor]
+    Position.X = 390.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 670.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Inter'
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.StyleExt = {00050000000000000004000000}
+    Text = 'Welcome back, Usernaem'
+    TabOrder = 3
+  end
+end
